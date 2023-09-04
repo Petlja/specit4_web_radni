@@ -1,0 +1,11 @@
+{% extends "osnovni_sablon.html" %}
+{% block sadrzaj %}
+<form action="{{url_for('korisnici')}}" method="GET">
+  <div>
+    <label for="slovo">Почетно слово:</label>
+    <br>
+    <input type="text" name="slovo" id="slovo">
+  </div>
+  <input type="submit" value="Претражи">
+</form>
+{% endblock %}

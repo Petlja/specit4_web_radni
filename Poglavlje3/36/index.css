@@ -1,0 +1,13 @@
+table,
+th,
+td {
+  border: solid 1px black;
+}
+
+#bez-spojenih-ivica {
+  border-collapse: separate;
+}
+
+#sa-spojenim-ivicama {
+  border-collapse: collapse;
+}

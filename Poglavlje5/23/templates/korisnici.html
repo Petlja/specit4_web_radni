@@ -1,0 +1,23 @@
+{% extends "osnovni_sablon.html" %}
+{% block sadrzaj %}
+  {% if korisnici %}
+    <table>
+      <tr>
+        <th>Идентификатор</th>
+        <th>Име</th>
+        <th>Презиме</th>
+        <th>Корисничко име</th>
+      </tr>
+      {% for korisnik in korisnici %}
+        <tr>
+          <td>{{korisnik["id_korisnika"]}}</td>
+          <td>{{korisnik["ime"]}}</td>
+          <td>{{korisnik["prezime"]}}</td>
+          <td>{{korisnik["korisnicko_ime"]}}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  {% else %}
+    <p>Нема корисника у систему.</p>
+  {% endif %}
+{% endblock %}

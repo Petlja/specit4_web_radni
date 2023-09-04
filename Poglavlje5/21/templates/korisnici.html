@@ -1,0 +1,34 @@
+<html lang="sr">
+  <head>
+    <title>Корисници</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='stil.css')}}"
+   >
+  </head>
+  <body>
+    <h1>Корисници</h1>
+
+    {% if korisnici %}
+    <table>
+      <tr>
+        <th>Идентификатор</th>
+        <th>Име</th>
+        <th>Презиме</th>
+        <th>Корисничко име</th>
+      </tr>
+      {% for korisnik in korisnici %}
+        <tr>
+          <td>{{korisnik["id_korisnika"]}}</td>
+          <td>{{korisnik["ime"]}}</td>
+          <td>{{korisnik["prezime"]}}</td>
+          <td>{{korisnik["korisnicko_ime"]}}</td>
+        </tr>
+      {% endfor %} 
+    </table>
+    {% else %}
+      <p>Нема корисника у систему.</p>
+    {% endif %}
+  </body>
+</html>

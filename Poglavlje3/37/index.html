@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS - стилизовање табела</title>
+
+    <link rel="stylesheet" type="text/css" href="./index.css">
+  </head>
+  <body>
+    <table id="siroka-tabela">
+      <caption>
+        Табела 1: Однос разног воћа и њиховог броја у килограму.
+      </caption>
+      <tr>
+        <th>Воћкице</th>
+        <th>Број у kg</th>
+      </tr>
+      <tr>
+        <td>Јабуке</td>
+        <td>&lt; 20</td>
+      </tr>
+      <tr>
+        <td>Боровнице</td>
+        <td>&gt; 100</td>
+      </tr>
+    </table>
+
+    <p>Однос разног поврћа и њиховог броја у килограму:</p>
+    <table id="obojena-tabela">
+      <tr>
+        <th>Поврће</th>
+        <th>Број у kg</th>
+      </tr>
+      <tr class="neparni-red">
+        <td>Шаргарепе</td>
+        <td>&sim; 20</td>
+      </tr>
+      <tr class="parni-red">
+        <td>Чери парадајз</td>
+        <td>&gt; 50</td>
+      </tr>
+    </table>
+  </body>
+</html>

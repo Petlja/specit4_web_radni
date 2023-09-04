@@ -1,0 +1,51 @@
+{% extends "osnovni_sablon.html" %}
+{% block sadrzaj %}
+<form
+  action="{{url_for('izmeni_korisnika', id_korisnika=korisnik['id_korisnika'])}}"
+  method="POST"
+>
+  <fieldset>
+    <legend>Основне информације</legend>
+    <div>
+      <label for="ime">Име:</label>
+      <br>
+      <input type="text" name="ime" id="ime" value="{{korisnik['ime']}}">
+    </div>
+    <div>
+      <label for="prezime">Презиме:</label>
+      <br>
+      <input
+        type="text"
+        name="prezime"
+        id="prezime"
+        value="{{korisnik['prezime']}}"
+     >
+    </div>
+    <div>
+      <label for="korisnicko_ime">Корисничко име:</label>
+      <br>
+      <input
+        type="text"
+        name="korisnicko_ime"
+        id="korisnicko_ime"
+        value="{{korisnik['korisnicko_ime']}}"
+     >
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>Промена лозинке</legend>
+    <div>
+      <label for="stara_lozinka">Стара лозинка:</label>
+      <br>
+      <input type="password" name="stara_lozinka" id="stara_lozinka">
+    </div>
+    <div>
+      <label for="nova_lozinka">Нова лозинка:</label>
+      <br>
+      <input type="password" name="nova_lozinka" id="nova_lozinka">
+    </div>
+  </fieldset>
+
+  <input type="submit" value="Измени корисника">
+</form>
+{% endblock %}

@@ -1,0 +1,17 @@
+div,
+p {
+  width: 300px;
+  height: 100px;
+}
+
+div {
+  border-style: solid;
+  border-width: 10px;
+}
+
+p {
+  border-top-style: dashed;
+  border-top-width: 20px;
+  border-bottom-style: dotted;
+  border-bottom-width: 30px;
+}

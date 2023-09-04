@@ -1,0 +1,21 @@
+<html lang="sr">
+  <head>
+    <title>Гимназија "Десанка Максимовић"</title>
+    <link rel="stylesheet" type="text/css" href="stil.css">
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="Логотип гимназије">
+      <h1 id="glavni-naslov">Гимназија <q>Десанка Максимовић</q></h1>
+      <nav>
+        <a href="pocetna.html">Почетна</a>
+        <a href="odeljenja.html">Одељења</a>
+      </nav>
+    </header>
+
+    <h2>{{naslov}}</h2>
+    {% block sadrzaj %} {% endblock %}
+
+    <script src="klijentski_kod.js"></script>
+  </body>
+</html>

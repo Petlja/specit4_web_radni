@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <title>Формулари</title>
+  <body>
+    <h1>Формулари - једнолинијски текстуални унос и дугмићи</h1>
+
+    <p>Пријави се на систем:</p>
+
+    <form>
+      <label for="korisnicko-ime">Корисник:</label>
+      <input
+        id="korisnicko-ime"
+        type="text"
+        name="korisnik"
+        required
+        minlength="3"
+        maxlength="15"
+        placeholder="Овде унеси твоје корисничко име"
+        size="35"
+     >
+
+      <br>
+
+      <label for="korisnicka-lozinka">Лозинка:</label>
+      <input
+        id="korisnicka-lozinka"
+        type="password"
+        name="lozinka"
+        required
+        minlength="8"
+        maxlength="20"
+        placeholder="Овде унеси твоју лозинку"
+        size="35"
+     >
+
+      <br>
+
+      <input type="submit" value="Пријави се">
+      <input type="reset" value="Поништи унос">
+    </form>
+  </body>
+</html>

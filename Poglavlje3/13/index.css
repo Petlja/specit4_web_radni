@@ -1,0 +1,27 @@
+h1 {
+  font-family: Arial;
+}
+
+p {
+  font-size: 20px;
+}
+
+#pasus-1 {
+  font-family: serif;
+}
+
+#pasus-2 {
+  font-family: sans-serif;
+}
+
+#pasus-3 {
+  font-family: monospace;
+}
+
+#pasus-4 {
+  font-family: cursive;
+}
+
+#pasus-5 {
+  font-family: fantasy;
+}

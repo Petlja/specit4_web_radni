@@ -1,0 +1,20 @@
+div,
+p {
+  width: 300px;
+  height: 100px;
+}
+
+div {
+  border-style: solid;
+  border-width: 10px;
+  border-color: deepskyblue;
+}
+
+p {
+  border-top-style: dashed;
+  border-top-width: 20px;
+  border-top-color: salmon;
+  border-bottom-style: dotted;
+  border-bottom-width: 30px;
+  border-bottom-color: deeppink;
+}

@@ -1,0 +1,16 @@
+{% extends "osnovni_sablon.html" %}
+{% block sadrzaj %}
+<form action="{{url_for('odeljenja')}}" method="GET">
+  <div>
+    <label for="razred">Разред:</label>
+    <br>
+    <input type="number" name="razred" id="razred">
+  </div>
+  <div>
+    <label for="odeljenje">Одељење:</label>
+    <br>
+    <input type="number" name="odeljenje" id="odeljenje">
+  </div>
+  <input type="submit" value="Прикажи ученике">
+</form>
+{% endblock %}

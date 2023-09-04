@@ -1,0 +1,29 @@
+table,
+th,
+td {
+  border: solid 1px black;
+  padding: 10px;
+}
+
+#siroka-tabela {
+  width: 100%;
+  caption-side: bottom;
+}
+
+#obojena-tabela {
+  border-collapse: collapse;
+  caption-side: top;
+}
+
+#obojena-tabela th {
+  background-color: dodgerblue;
+  color: white;
+}
+
+#obojena-tabela .neparni-red {
+  background-color: azure;
+}
+
+#obojena-tabela .parni-red {
+  background-color: rgba(0, 191, 255, 0.5);
+}

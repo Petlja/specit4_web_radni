@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS позиционирање - приказивање и сакривање</title>
+
+    <link rel="stylesheet" type="text/css" href="./index.css">
+  </head>
+  <body>
+    <div id="leva-kolona">
+      <p>
+        Ова колона садржи 3 елемента, од којих је један сакривен декларацијом
+        ”visibility: hidden”.
+      </p>
+      <div id="plavi"></div>
+      <div id="crveni" class="sakriven"></div>
+      <div id="zlatni"></div>
+    </div>
+    <div id="desna-kolona">
+      <p>
+        Ова колона садржи 3 елемента, од којих је један изузет из DOM стабла
+        декларацијом ”display: none".
+      </p>
+      <div id="plavi"></div>
+      <div id="crveni" class="izuzet"></div>
+      <div id="zlatni"></div>
+    </div>
+  </body>
+</html>

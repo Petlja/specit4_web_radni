@@ -1,0 +1,16 @@
+<html lang="sr">
+  <head>
+    <title>Гимназија "Десанка Максимовић"</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="glavni-naslov">Гимназија <q>Десанка Максимовић</q></h1>
+      <nav>
+        <a href="{{url_for('pocetna')}}">Почетна</a>
+      </nav>
+    </header>
+
+    <h2>{{naslov}}</h2>
+    {% block sadrzaj %} {% endblock %}
+  </body>
+</html>

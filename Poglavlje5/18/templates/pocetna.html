@@ -1,0 +1,8 @@
+{% extends "osnovni_sablon.html" %}
+{% block sadrzaj %}
+    {% if korisnicko_ime %}
+        <p>Добродошли, {{korisnicko_ime}}!</p>
+    {% else %}
+        <p>Добродошли у веб-продавницу!</p>
+    {% endif %} 
+{% endblock %}

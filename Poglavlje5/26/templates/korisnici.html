@@ -1,0 +1,40 @@
+{% extends "osnovni_sablon.html" %}
+{% block sadrzaj %}
+  {% if korisnici %}
+    <table>
+      <tr>
+        <th>Идентификатор</th>
+        <th>Име</th>
+        <th>Презиме</th>
+        <th>Корисничко име</th>
+        <th colspan="2">Операције</th>
+      </tr>
+      {% for korisnik in korisnici %}
+        <tr>
+          <td>{{korisnik["id_korisnika"]}}</td>
+          <td>{{korisnik["ime"]}}</td>
+          <td>{{korisnik["prezime"]}}</td>
+          <td>{{korisnik["korisnicko_ime"]}}</td>
+          <td>
+            <a
+              class="dugme-operacija"
+              href="{{url_for('izmeni_korisnika', id_korisnika=korisnik['id_korisnika'])}}"
+              >Измени</a
+            >
+          </td>
+          <td>
+            <form
+              class="forma-operacija"
+              action="{{url_for('obrisi_korisnika', id_korisnika=korisnik['id_korisnika'])}}"
+              method="POST"
+            >
+              <input type="submit" value="Обриши" class="dugme-operacija">
+            </form>
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+  {% else %}
+    <p>Нема корисника у систему.</p>
+  {% endif %}
+{% endblock %}

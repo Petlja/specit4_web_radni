@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <title>Формулари</title>
+  <body>
+    <h1>Формулари - дугмићи за избор</h1>
+
+    <p>Попуни анкету:</p>
+
+    <form>
+      <label>Од слаткиша највише волим:</label>
+      <br>
+      <input
+        id="slatkis-kinder"
+        type="radio"
+        name="slatkis"
+        value="kinder"
+        checked
+     >
+      <label for="slatkis-kinder">Kinder</label>
+      <input id="slatkis-bounty" type="radio" name="slatkis" value="bounty">
+      <label for="slatkis-bounty">Bounty</label>
+      <input id="slatkis-kitkat" type="radio" name="slatkis" value="kitkat">
+      <label for="slatkis-kitkat">KitKat</label>
+
+      <br>
+
+      <label>Од сланиша волим:</label>
+      <br>
+      <input id="cips-chipsy" type="checkbox" name="cips" value="chipsy">
+      <label for="cips-chipsy">Chipsy чипс</label>
+      <br>
+      <input id="cips-cacak" type="checkbox" name="cips" value="cacak">
+      <label for="cips-cacak">Чачански чипс</label>
+      <br>
+      <input id="kokice" type="checkbox" name="kokice">
+      <label for="kokice">Кокице</label>
+
+      <br>
+
+      <input type="submit" value="Заврши анкету">
+    </form>
+  </body>
+</html>

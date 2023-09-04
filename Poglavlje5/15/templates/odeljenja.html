@@ -1,0 +1,10 @@
+{% extends "osnovni_sablon.html" %}
+{% block sadrzaj %}
+<p>Одељење: {{razred}}-{{odeljenje}}</p>
+<p>Ученици:</p>
+<ol>
+  {% for ucenik in ucenici %}
+  <li>{{ucenik}}</li>
+  {% endfor %}
+</ol>
+{% endblock %}

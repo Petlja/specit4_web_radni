@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript задатак - калкулатор</title>
+  </head>
+  <body>
+    <div>
+      <label for="prvi-broj">Први број</label>
+      <br>
+      <input id="prvi-broj" type="text">
+    </div>
+
+    <div>
+      <label for="drugi-broj">Други број</label>
+      <br>
+      <input id="drugi-broj" type="text">
+    </div>
+
+    <div>
+      <input type="radio" name="operacija" id="zbir" value="zbir">
+      <label for="zbir">+</label>
+      <br>
+      <input type="radio" name="operacija" id="razlika" value="razlika">
+      <label for="razlika">-</label>
+      <br>
+      <input type="radio" name="operacija" id="mnozenje" value="mnozenje">
+      <label for="mnozenje">*</label>
+      <br>
+      <input type="radio" name="operacija" id="deljenje" value="deljenje">
+      <label for="deljenje">/</label>
+    </div>
+
+    <input id="dugme" type="button" value="Израчунај">
+
+    <p id="rezultat">Резултат:</p>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

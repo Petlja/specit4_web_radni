@@ -1,0 +1,8 @@
+{% extends "osnovni_sablon.html" %}
+{% block sadrzaj %}
+<ul>
+  {% for razred in razredi %}
+  <li>{{razred}} разред</li>
+  {% endfor %}
+</ul>
+{% endblock %}

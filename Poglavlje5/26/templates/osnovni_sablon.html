@@ -1,0 +1,21 @@
+<html lang="sr">
+  <head>
+    <title>Корисници</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='stil.css')}}"
+   >
+  </head>
+  <body>
+    <h1>{{naslov}}</h1>
+
+    {% with poruke = get_flashed_messages(with_categories=True) %}
+      {% for kategorija, poruka in poruke %}
+        <div class="{{kategorija}}">{{poruka}}</div>
+      {% endfor %} 
+    {% endwith %} 
+    
+    {% block sadrzaj %} {% endblock %}
+  </body>
+</html>

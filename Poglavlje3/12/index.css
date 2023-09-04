@@ -1,0 +1,19 @@
+.tekst-20 {
+  font-size: 20px;
+}
+
+.tekst-iskosen {
+  font-style: italic;
+}
+
+.tekst-podebljan {
+  font-weight: bold;
+}
+
+.tekst-centriran {
+  text-align: center;
+}
+
+.tekst-velika-slova {
+  text-transform: uppercase;
+}

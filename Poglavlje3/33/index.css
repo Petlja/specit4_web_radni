@@ -1,0 +1,12 @@
+img,
+p {
+  float: right;
+}
+
+p {
+  width: 70%;
+}
+
+h1 {
+  clear: both;
+}

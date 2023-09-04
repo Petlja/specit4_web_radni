@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <title>Формулари</title>
+  <body>
+    <h1>Формулари - падајућа листа</h1>
+
+    <p>Попуни анкету:</p>
+
+    <form>
+      <label for="najbolji-jezik">Најбоље знам програмски језик:</label>
+      <br>
+      <select id="najbolji-jezik" name="programski-jezik">
+        <option value="python">Python</option>
+        <option value="csharp">C#</option>
+        <option value="cpp">C++</option>
+        <option value="js">JavaScript</option>
+      </select>
+
+      <br>
+
+      <label for="najvise-volim">Мислим да најбоље познајем:</label>
+      <br>
+      <select id="najvise-volim" name="programski-jezik">
+        <optgroup label="Теорија рачунарства">
+          <option value="алг">Алгоритме</option>
+          <option value="ос">Оперативне системе</option>
+          <option value="примена">Примену рачунара</option>
+        </optgroup>
+        <optgroup label="Наука о подацима">
+          <option value="бп">Базе података</option>
+        </optgroup>
+      </select>
+
+      <br>
+
+      <input type="submit" value="Заврши анкету">
+    </form>
+  </body>
+</html>

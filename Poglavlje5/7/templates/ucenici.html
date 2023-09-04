@@ -1,0 +1,19 @@
+<html lang="sr">
+  <head>
+    <title>Ученици у одељењу</title>
+  </head>
+  <body>
+    {% if odeljenje %}
+      <h1>Одељење: {{odeljenje}}</h1>
+    {% endif %} 
+    
+    {% if ucenici %}
+      <p>Ученици:</p>
+      <ul>
+        {% for ucenik in ucenici %}
+          <li>{{ucenik}}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </body>
+</html>

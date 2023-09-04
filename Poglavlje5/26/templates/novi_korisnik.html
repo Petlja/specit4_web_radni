@@ -1,0 +1,27 @@
+{% extends "osnovni_sablon.html" %}
+{% block sadrzaj %}
+<form action="{{url_for('novi_korisnik')}}" method="POST">
+  <div>
+    <label for="ime">Име:</label>
+    <br>
+    <input type="text" name="ime" id="ime">
+  </div>
+  <div>
+    <label for="prezime">Презиме:</label>
+    <br>
+    <input type="text" name="prezime" id="prezime">
+  </div>
+  <div>
+    <label for="korisnicko_ime">Корисничко име:</label>
+    <br>
+    <input type="text" name="korisnicko_ime" id="korisnicko_ime">
+  </div>
+  <div>
+    <label for="lozinka">Лозинка:</label>
+    <br>
+    <input type="password" name="lozinka" id="lozinka">
+  </div>
+
+  <input type="submit" value="Додај корисника">
+</form>
+{% endblock %}
